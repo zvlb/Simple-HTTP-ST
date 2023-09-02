@@ -16,4 +16,4 @@ FROM alpine:3.18
 WORKDIR /app
 COPY --from=builder /app/bin/simple-http-st .
 
-CMD ["/app/simple-http-st"]
+ENTRYPOINT ["/app/simple-http-st"]
